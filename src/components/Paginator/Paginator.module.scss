@@ -1,0 +1,64 @@
+.paginator {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3px;
+  color: white;
+
+  :global(.previous) {
+    a {
+      display: flex;
+      margin: 5px;
+      border: 1px solid white;
+      border-radius: 6px;
+      padding: 3px;
+      min-width: 100px;
+      background-color: #302b2b;
+    }
+  }
+
+  :global(.next) {
+    a {
+      display: flex;
+      margin: 5px;
+      border: 1px solid white;
+      border-radius: 6px;
+      padding: 3px;
+      min-width: 100px;
+      background-color: #302b2b;
+    }
+  }
+
+  li {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+      border: 1px solid white;
+      border-radius: 6px;
+      padding: 3px;
+      background-color: #302b2b;
+      min-width: 25px;
+      text-align: center;
+    }
+
+    &:global(:not(.selected)) {
+      cursor: pointer;
+    }
+  }
+
+  :global(.selected) {
+    a {
+      background-color: #736d6d;
+    }
+  }
+}
+
+.paginatorContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

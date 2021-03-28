@@ -1,0 +1,170 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: black;
+
+  .containerBtn {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #302b2b;
+    padding-top: 100px;
+  }
+}
+
+.iconLeft {
+  height: 13px;
+  width: 25px;
+  transform: rotate(180deg);
+}
+
+.iconRight {
+  height: 13px;
+  width: 25px;
+}
+
+.buttonMenu {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border: none;
+  font-size: 20px;
+  min-width: 210px;
+  padding: 5px;
+  background: transparent;
+  color: #000000;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover {
+    border-radius: 6px;
+    background-color: #645d57;
+  }
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 80px;
+
+  img {
+    height: 400px;
+    width: 250px;
+  }
+
+  button {
+    background: transparent;
+    border: 1px solid #342e2e;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    padding: 5px;
+    min-width: 190px;
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+
+    .ratingContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      span {
+        margin-right: 10px;
+        font-weight: bold;
+      }
+    }
+
+    .description {
+      max-width: 700px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.containerBlur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+}
+
+.buttonHover {
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: #645d57;
+  }
+}
+
+.titleContainer {
+  font-size: 18px;
+  text-align: start;
+  padding: 0;
+  color: black;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 950px) {
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .infoContainer {
+
+    span {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .ratingContainer {
+      justify-content: center;
+    }
+  }
+}
+
+.cont {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 500px) {
+  .containerBtn {
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .imgContainer {
+    margin: 0;
+
+    img {
+      height: 200px;
+      width: 150px;
+    }
+  }
+
+  button {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .cont {
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      margin-top: 10px;
+    }
+  }
+}

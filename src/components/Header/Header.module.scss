@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302b2b;
+  color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.containerBtn {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 20px;
+  color: #ffffff;
+  background-color: #302b2b;
+  border: #ffffff solid 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
